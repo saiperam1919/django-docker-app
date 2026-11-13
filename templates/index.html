@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Project By Sai</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body {
+            background: linear-gradient(135deg, #1b5299 0%, #2a7de1 50%, #16427d 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+        .logo { font-size: 26px; font-weight: bold; display: flex; align-items: center; gap: 10px; }
+        .nav-links { display: flex; gap: 25px; align-items: center; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; padding: 8px 16px; border-radius: 6px; }
+        .nav-links a.active { background-color: #3b82f6; }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 { font-size: 40px; letter-spacing: 1px; margin-bottom: 25px; }
+        h1 span { color: #facc15; }
+        .welcome-card {
+            background: white;
+            padding: 25px 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-bottom: 25px;
+        }
+        .welcome-card h2 { font-size: 32px; color: #1e293b; }
+        .welcome-card .name { color: #7e22ce; }
+        .welcome-card .sub { color: #16a34a; display: block; margin-top: 5px; }
+        .subtitle { font-style: italic; font-size: 18px; margin-bottom: 35px; }
+        .subtitle span { color: #facc15; font-weight: bold; }
+        .stack { display: flex; align-items: center; gap: 18px; margin-bottom: 35px; flex-wrap: wrap; justify-content: center; }
+        .stack-item { display: flex; flex-direction: column; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; }
+        .circle {
+            width: 75px; height: 75px; background: white; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .circle img { width: 42px; height: 42px; object-fit: contain; }
+        .arrow { font-size: 20px; opacity: 0.8; margin-bottom: 24px; }
+        .badges {
+            background: rgba(255, 255, 255, 0.92);
+            color: #1e293b;
+            padding: 18px 35px;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .badge-row { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🐍 django</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Technologies</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>DJANGO PROJECT BY <span>SAI</span></h1>
+
+        <div class="welcome-card">
+            <h2>
+                <span class="name">Srinivas annaa</span> Welcome To My
+                <span class="sub">First Django Docker Project</span>
+            </h2>
+        </div>
+
+        <p class="subtitle">Built Using <span>Django, Docker, GitHub and AWS EC2</span></p>
+
+        <div class="stack">
+            <div class="stack-item">
+                <div class="circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                </div>
+                <span>Django</span>
+            </div>
+            <div class="arrow">→</div>
+            <div class="stack-item">
+                <div class="circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                </div>
+                <span>Docker</span>
+            </div>
+            <div class="arrow">→</div>
+            <div class="stack-item">
+                <div class="circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                </div>
+                <span>GitHub</span>
+            </div>
+            <div class="arrow">→</div>
+            <div class="stack-item">
+                <div class="circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS EC2">
+                </div>
+                <span>AWS EC2</span>
+            </div>
+        </div>
+
+        <div class="badges">
+            <div class="badge-row">
+                <span>🚀 Fast & Scalable Application</span>
+                <span>🐳 Containerized Deployment</span>
+                <span>☁️ Cloud Hosted on AWS</span>
+            </div>
+            <div>🏆 DevOps Ready Project</div>
+        </div>
+    </main>
+</body>
+</html>
